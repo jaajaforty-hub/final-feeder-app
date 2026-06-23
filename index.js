@@ -11,8 +11,11 @@ const app = express();
 
 
 const db = new pg.Pool({
-  connectionString:process.env.DB_CONNECTIONS,
-  ssl:{rejectUnauthorized:false}
+  user: 'postgres',
+  host: 'localhost',         
+  database: 'data',
+  password: '1841', 
+  port: 5432,
           
 });
 
