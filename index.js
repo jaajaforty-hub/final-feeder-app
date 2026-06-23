@@ -25,6 +25,7 @@ let teams = []
 async function getTable() {
    const data  = await db.query('SELECT * FROM teams')
    teams = data.rows 
+  return teams;
     
 }
 getTable()
