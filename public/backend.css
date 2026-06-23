@@ -131,14 +131,14 @@
 
 }
 .team-logo{
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
 }
 img{
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
 }
 .team_heading{
     margin: 50px 0px 0px 4%;
