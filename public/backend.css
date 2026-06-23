@@ -135,6 +135,11 @@
     height: 10px;
     border-radius: 50px;
 }
+img{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
 .team_heading{
     margin: 50px 0px 0px 4%;
     font-size: x-large; 
