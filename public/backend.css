@@ -6,7 +6,7 @@
     --lightgray: #d3d3d3;
     --logo: Tektur;
     --headingf: Archivo;
-    --darkcyna: #0e7c80;
+    --lightcyna: #9CB080;
     --accent-orange: #FF8C42;
     --bg-light: #edeeee;
     --subtitle: rgb(180, 135, 68);
@@ -57,17 +57,18 @@
 }
 
 .user{
-  background-color: var(--accent-orange);
+  background-color: var(--lightcyna);
   color: var(--headings);
   border-radius: 5px;
   padding: 8px;
   margin-left: 20px;
+  text-decoration: none;
 }
 .user:hover{
     box-shadow: 2px 2px 2px 3px var(--darkgray);
 }
 .home{
-  background-color: var(--accent-orange);
+  background-color: var(--lightcyna);
   color: var(--headings);
   border-radius: 5px;
   padding: 8px;
@@ -110,31 +111,7 @@
 }
 
 /*===================== Table and the components ===================== */
-.table{
-    display: block;
-    overflow-y:scroll ;
-    overflow-x: hidden;
-    border-radius: 5px;
-    border: 2px solid var(--headings);
-    border-radius: 3px;
-    border-top-left-radius: 0px;
-    box-shadow: 1px 1px 10px 1px rgb(104, 103, 103);
-    height: 300px;
-    width: 2fr;
-    padding-bottom: 20px;
-    color: #9CB080;
-    background: var(--headings);
-    font-weight: lighter;
-    font-size: x-large;
-    font-family: var(--headingf);
- 
 
-}
-.logo{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
 .team_heading{
     margin: 50px 0px 0px 4%;
     font-size: x-large; 
@@ -144,30 +121,49 @@
     width: 30vw;
     height: 3vh;
     text-align: center;
-  
-   
     font-family: var(--headingf);
     font-size: large;
     padding: 20px;
     color: var(--accent-orange) ;
     border-radius: 5px;
     border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;  
+}
+.table{
+    display: block;
+    overflow-y:scroll ;
+    overflow-x: scroll;
+    border-radius: 5px;
+    border: 2px solid var(--headings);
+    border-radius: 3px;
+    border-top-left-radius: 0px;
+    box-shadow: 1px 1px 10px 1px rgb(104, 103, 103);
+    height: 300px;
+    width: 2fr;
+    padding-bottom: 20px;
+    color: var(--lightcyna);
+    background: var(--headings);
+    font-weight: lighter;
+    font-size: x-large;
+    font-family: var(--headingf);
+ 
 
-   
-   
+}
+.t-teams {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-.t-teams{
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 25px;
-    margin-top: 30px;
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+   
 
-    width: 90%;
-    height: 40px;
-    align-items: center;
-    border-radius: 5px;
 }
 
 /*========================= The Rigth div with the inputs =============================== */
@@ -206,9 +202,10 @@
     flex: 1;
     width: 100px;
     min-width: 150px;
+    
 }
 .days:hover{
-    box-shadow: 0px 0px 20px 10px var(--accent-orange);
+    box-shadow: 0px 0px 20px 10px var(--lightcyna);
     height: 25px;
 
 }
@@ -224,23 +221,29 @@
     width: 100%;
     padding: 20px 50px 20px 0px;
     box-shadow: 0px 0px 10px 1px lightgray;
-    background: linear-gradient(to right, var(--accent-orange), var(--headings), var(--accent-orange), var(--headings));
-    color: var(--accent-orange);
+    background: var(--headings);
+    color: var(--lightcyna);
     align-items: center;
 }
+
 .teamInputs >*{
     margin-top: 70px;
     margin-left: 100px;
+  
     
 }
-
+ 
 .teamInputs > div >*{
     margin-left: 30px;
     margin-top: 10px;
-    display: block;
+    display: block; 
+   
 }
 .teamInputs > div > input{
   width: 200px;
+  background: rgb(235, 250, 240);
+  border-radius: 5px;
+  border: 1px solid var(--lightcyna);
 }
 .submit-button,.clear-button{
     margin-left: 150px; 
@@ -249,19 +252,19 @@
     height: 50px; 
     border: 5px solid var(--headings);
     border-radius: 10px; 
-    color: var(--accent-orange);
+    color: var(--headings);
     width: 150px;
-    background-color: var(--headings);
+    background-color: var(--accent-orange);
 }
 .submit-button:hover{
-     box-shadow: 0px 0px 20px 10px var(--headings);
+     box-shadow: 0px 0px 20px 10px var(--lightgray);
 }
 .clear-button:hover{
-    box-shadow: 0px 0px 20px 10px var(--headings);
+    box-shadow: 0px 0px 20px 10px var(--lightgray);
 }
 .message{
-    color: var(--accent-orange); 
-   
+    color: green; 
+    margin-top: -10px;
     font-size:x-large;
     font-family: var(--logo); 
 }

@@ -3,15 +3,9 @@
    <h1 class="day-title">FRIDAY</h1> 
 <div class="center-main">
 
-    <div class="table">
-        <% locals.teams.forEach(team => { %>
-            <div class="t-teams">
-                <img src=<%= team.logo %>>
-                <div><%= team.team_name %></div>
-                <div><%= team.country %></div>
-            </div>
-        <% }); %>
-
+  
+    <div class="table"> 
+        <%- include("partials/table.ejs") %>
     </div>
         
     <form class="main" action="/friday" method="POST">

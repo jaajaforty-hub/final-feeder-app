@@ -1,20 +1,14 @@
 
 <%- include("partials/header.ejs") %>
-  <h1 class="day-title">THURDAY</h1> 
+  <h1 class="day-title">THURSDAY</h1> 
 <div class="center-main">
 
-    <div class="table">
-        <% locals.teams.forEach(team => { %>
-            <div class="t-teams">
-                <img src=<%= team.logo %>>
-                <div><%= team.team_name %></div>
-                <div><%= team.country %></div>
-            </div>
-        <% }); %>
-
+   
+    <div class="table"> 
+        <%- include("partials/table.ejs") %>
     </div>
         
-    <form class="main" action="/thurday" method="POST">
+    <form class="main" action="/thursday" method="POST">
         
           <div class="teamInputs">
 
