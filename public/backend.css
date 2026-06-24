@@ -149,9 +149,53 @@
  
 
 }
+<<<<<<< HEAD
 .t-teams {
     display: grid;
     grid-template-columns: 60px 1fr 1fr;
+=======
+.team-logo{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+.team_heading{
+    margin: 50px 0px 0px 4%;
+    font-size: x-large; 
+    font-family: var(--headingf);
+    font-weight: lighter;
+    background-color: var(--headings);
+    width: 30vw;
+    height: 3vh;
+    text-align: center;
+  
+   
+    font-family: var(--headingf);
+    font-size: large;
+    padding: 20px;
+    color: var(--accent-orange) ;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+   
+   
+}
+
+.t-teams{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 25px;
+    margin-top: 30px;
+
+    width: 90%;
+    height: 40px;
+>>>>>>> f0e265446cfadf4c3adc86ac5fece4927ef90d91
     align-items: center;
     gap: 100px;
     padding: 10px;

@@ -5,8 +5,21 @@
         </div>
 <div class="center-main">
 
+<<<<<<< HEAD
     <div class="table"> 
         <%- include("partials/table.ejs") %>
+=======
+    <div class="table">
+       
+        <% locals.teams.forEach(team => { %>
+            <div class="t-teams">
+                <img class="team-logo" src=<%= team.logo %> >
+                <div ><%= team.team_name %></div>
+                <div><%= team.country %></div>
+            </div>
+        <% }); %>
+
+>>>>>>> f0e265446cfadf4c3adc86ac5fece4927ef90d91
     </div>
         
     <main class="main">
